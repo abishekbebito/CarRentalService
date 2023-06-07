@@ -1,38 +1,19 @@
-.App {
-  text-align: center;
-}
+.login-signup-css {
+  background-image: url("./frontend/pics/Lambo1st.jpg");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 1229px;
+  height: 569px;
+  background-size: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-signup-box {
+  background-color: rgba(0, 0, 0, 0.407);
+  border-radius: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.carCard:hover {
+  transition: all ease 100ms;
+  transform: scale(1.03);
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-bar {
+  color: rgbr(255, 255, 0);
+  background-color: rgba(0, 41, 74, 0.636);
 }

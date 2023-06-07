@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { React, useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Container } from "react-bootstrap";
+import { cars } from "./frontend/Cardata";
+import { CarCards } from "./frontend/CarCards";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <h1>Cars Available</h1>
+      <div className=" d-flex gap-5">
+        {cars.map((car) => {
+          return (
+            <CarCards
+              key={car.id}
+              id={car.id}
+              name={car.name}
+              sourcefile={car.sourcefile}
+              amount={car.amount}
+            />
+          );
+        })}
+      </div>
+    </Container>
   );
 }
 
